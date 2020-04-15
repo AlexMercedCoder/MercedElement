@@ -6,7 +6,7 @@
 //CaptureProps
 /////////////
 
-const captureProps = (element) => {
+export const captureProps = (element) => {
     const att = [...element.attributes];
     const entries = att.map((value) => {
         return [value.name, value.value];
@@ -19,7 +19,7 @@ const captureProps = (element) => {
 //MercedElement
 /////////////////
 
-class MercedElement extends HTMLElement {
+export class MercedElement extends HTMLElement {
     constructor(builder, state, reducer) {
         super();
         this.builder = builder;
@@ -76,7 +76,7 @@ class MercedElement extends HTMLElement {
 // FormTool
 ////////////////////////////
 
-class FormTool {
+export class FormTool {
     constructor(form) {
         this.form = form;
         this.fields = [...this.form.children].filter((value) => {
@@ -117,7 +117,7 @@ class FormTool {
 // getQueryHash
 ////////////////////////////
 
-const getQueryHash = () => {
+export const getQueryHash = () => {
     const hash = window.location.href.split('#')[1];
 
     const queryArray1 = window.location.href

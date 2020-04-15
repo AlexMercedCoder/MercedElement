@@ -36,7 +36,7 @@ class MercedElement extends HTMLElement {
     }
 
     setState(newState) {
-        this.state = newState;
+        this.state = { ...this.state, ...newState };
         this.build();
     }
 
@@ -130,4 +130,11 @@ const getQueryHash = () => {
     });
 
     return [Object.fromEntries(queryEntries), hash];
+};
+
+module.exports = {
+    MercedElement,
+    captureProps,
+    getQueryHash,
+    FormTool,
 };
