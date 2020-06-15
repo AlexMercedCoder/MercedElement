@@ -77,6 +77,8 @@ connectedCallback(){} => Runs when components mounted
 
 disconnectedCallback(){} => Runs when component is removed from dom
 
+postBuild(){} => function that runs after every render, great for adding event listeners, not for setting state
+
 _read JavaScript Documentation regarding adoptedCallback and attributeChangedCallback_
 
 ### FormTool

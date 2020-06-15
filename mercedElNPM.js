@@ -33,6 +33,11 @@ class MercedElement extends HTMLElement {
     build() {
         this.props = captureProps(this);
         this.shadowRoot.innerHTML = this.builder(this.state, this.props);
+        this.postBuild(state, props);
+    }
+
+    postBuild(state, props) {
+        return null;
     }
 
     setState(newState) {
