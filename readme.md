@@ -4,16 +4,43 @@
 
 ![mui](https://i.imgur.com/Jp894lv.png)
 
-If you just wants a simpler way to create Web Components, try out simple components at https://github.com/AlexMercedCoder/simpleComponents_
-
-If you want all the UI tools that Alex Merced has created get the full MercedUI liberary here: https://github.com/AlexMercedCoder/MercedUI
-
-CDN Link: http://www.alexmercedcoder.com/mercedEl.js
-Youtube Tutorials: https://www.youtube.com/playlist?list=PLY6oTPmKnKbYrP3DfCUTYYADu0IT9DRZZ
-
 ## About
 
 MercedElement is a class that simplifies working with the native HTMLElement class in javascript giving the user access to reactive state, props, reducer/dispatch and global state.
+
+## Installation
+
+### CDN
+
+```
+<script src="https://res.cloudinary.com/dithdroai/raw/upload/v1609694497/libraries/mercedEl_fje3k2.js" charset="utf-8" defer></script>
+```
+
+### NPM
+
+```
+npm i mercedelement
+```
+
+in your javascript file
+
+```
+const {MercedElement, FormTool} = require("mercedelement")
+```
+
+### ES6 Module
+
+index.html
+
+```
+<script type="module" src="app.js" charset="utf-8" defer></script>
+```
+
+app.js
+
+```
+import {MercedElement, FormTool} from "https://res.cloudinary.com/dithdroai/raw/upload/v1609694497/libraries/mercedElModule_goo6aw.js"
+```
 
 ## Classes
 
